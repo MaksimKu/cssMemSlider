@@ -1,0 +1,88 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: darkslategrey;
+}
+.wrapper {
+    width: 400%;
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+}
+input {
+    display: none;
+}
+.slid1 {
+    width: 100%;
+    transition: 0.5s;
+}
+.slid1, .slid2, .slid3, .slid4 {
+    width: 100%;
+}
+h4 {
+    margin-left: 5%;
+    font-size: 1em;
+}
+img {
+    width: 100%;
+}
+
+#slid1:checked ~ .wrapper {
+    margin-left: 0%;
+}
+#slid2:checked ~ .wrapper {
+    margin-left: -100%;
+}
+#slid3:checked ~ .wrapper {
+    margin-left: -200%;
+}
+#slid4:checked ~ .wrapper {
+    margin-left: -300%;
+}
+.div-lab {
+    display: flex;
+    gap: 1%;
+}
+label {
+    padding: 3%;
+}
+
+span {
+    color: turquoise;
+    padding: 1%;
+    border: solid turquoise;
+    border-radius: 100%;
+    background-color: turquoise;
+}
+label {
+    display: block;
+}
+label:hover {
+    cursor: pointer;
+}
+label:hover span {
+    background-color: white;
+    border: solid white;
+    color: white;
+}
+
+#slid1:checked ~ .div-lab > #hy1 > span{
+    background-color: darkslategrey;
+    color: darkslategrey;
+}
+#slid1:checked ~ .div-lab > #hy1:hover > span{
+    border: solid white;
+}
+#slid2:checked ~ .div-lab > #hy2 > span{
+    background-color: darkslategrey;
+    color: darkslategrey;
+}
+#slid3:checked ~ .div-lab > #hy3 > span{
+    background-color: darkslategrey;
+    color: darkslategrey;
+}
+#slid4:checked ~ .div-lab > #hy4 > span{
+    background-color: darkslategrey;
+    color: darkslategrey;
+}
